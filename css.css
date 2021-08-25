@@ -1,0 +1,74 @@
+body{
+    align-items: center;
+    
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  /*  background-color: rgb(151, 253, 253); */
+  background:linear-gradient( rgba(0, 0, 0, 0.5),#10bfc5);
+  
+   
+}
+.conteiner{ 
+    display: flex;
+    height: 600px;
+    width: 80vw;
+border:2px solid rgb(28, 219, 210);
+border-radius: 30px;
+
+    
+}
+
+.panel{
+    margin: 10px 20px;
+   width: 50px;
+    border-radius: 30px;
+    background-color:blanchedalmond;
+    transition: flex 0.5s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+display: flex;
+
+align-items: flex-end;
+    
+}
+.panel h1{
+   
+    padding-left: 10px;
+   color: rgb(60, 66, 66);
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+.active{
+
+    flex:7;
+}
+.panel input{
+    
+    font-size: 15px;
+    color: darkblue;
+    padding:5px 15px;
+    margin-left: 10px;
+    background: none;
+    border: none;
+    border:1px solid cyan;
+   transition: 0.5s;
+}
+.panel input:hover{
+    cursor: pointer;
+    background-color: rgb(24, 121, 108);
+    color: white;
+    width: 150px;
+    height: 30px;
+   
+}
+.nevidljivi{
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease;
+}
+.panel.active .nevidljivi{
+    display: block;
+    opacity: 1;
+}
